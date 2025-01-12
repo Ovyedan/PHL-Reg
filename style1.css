@@ -1,0 +1,275 @@
+@charset "utf-8";
+*, body, html{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* this is my navbar */
+
+
+.navbar{
+    background-color: #fff;
+    border: .2rem solid rgb(243, 239, 239);
+    border-width: .2rem 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    font-family: sans-serif;
+}
+  .nav1{
+    color: rgb(6, 149, 80);
+    padding-right: 2rem;
+    border-right: .3rem solid rgb(243, 239, 239);
+    font-weight: 900;
+    font-size: large;
+    padding-bottom: 0;
+    padding-bottom: 3em;
+ }
+ .nav21, .nav31{
+    padding-bottom: 4em;
+ }
+
+ .home{
+    color: blue;
+    padding: 0;
+    padding-right: 2rem;
+    font-size: large;
+    text-decoration: none;
+ }
+ .link{
+    color: gray;
+ }
+
+ /* .......................Main.......................... */
+ main{
+    border: .2rem solid rgba(39, 89, 151, 0.62);
+    border-width: .2rem 0;
+ }
+ .introduction{
+    background-color: aquamarine;
+    padding: 5rem 0 5rem 14rem;
+    background: transparent;
+
+ }
+
+
+/*....................... background slide css .............................*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+.bg-slide, .bg-slide:after{
+	position:cover;
+	width:100%;
+	top:0;
+	left:0;
+	z-index:-1;
+	list-style:none;
+    padding-top: 1rem;
+    margin-bottom: 8em;
+}
+
+.bg-slide:after{
+	content: '';
+	background: url(../images/grid.png) ;
+}
+
+.bg-slide li span{
+	width:100%;
+	height:100%;
+	position:absolute;
+   list-style: none;
+	top:0;
+	left:0;
+	color:transparent;
+	opacity:.5;
+	z-index:-1;
+	-webkit-animation: imageFade 24s linear infinite 0s;
+	-moz-animation: imageFade 24s linear infinite 0s;
+	-o-animation: imageFade 24s linear infinite 0s;
+	-ms-animation: imageFade 24s linear infinite 0s;
+	animation: imageFade 24s linear infinite 0s;
+}
+
+.bg-slide li:nth-child(1) span{
+	background:url(../images/livingseededit_sized.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-slide li:nth-child(2) span{
+	background:url(../images/slide3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	-webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+	animation-delay:6s; 
+}
+
+.bg-slide li:nth-child(3) span{
+	background:url(../images/livingseededit_sized.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	-webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s; 
+}
+
+.bg-slide li:nth-child(4) span{
+	background:url(../images/livingseededit_sized.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	-webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s;  
+}
+
+ 
+.home-slideshow li:nth-child(5) span { 
+    background-image: url(../images/slide3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    block-size: cover;
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s; 
+}
+
+/* Animation for Home Image Slide show */
+
+@-webkit-keyframes imageFade { 
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes imageFade { 
+    0% { opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -moz-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes imageFade { 
+    0% { opacity: 0;
+    -o-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -o-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-ms-keyframes imageFade { 
+    0% { opacity: 0;
+    -ms-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -ms-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes imageFade { 
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+/* ..............................End of background CSS...................................... */
+
+ .intro{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 2rem;
+  }
+ .log{
+    background-color: rgb(42, 86, 136);
+    border-radius: .2rem;
+    width: 14%;
+    color: white;
+    font-family: sans-serif;
+    padding: .4rem;
+    font-size: small;
+    margin-bottom: 1rem;
+ }
+ .log2{
+    background-color: rgb(42, 86, 136);
+    border-radius: .2rem;
+    width: 19%;
+    color: white;
+    font-family: sans-serif;
+    padding: .4rem ;
+    font-size: small;
+ }
+ /* ..................My personalize css............................... */
+ .personalize{
+   background-color: rgb(243, 239, 239);
+   /* padding-top: 4rem; */
+   padding-bottom: 4rem;
+   padding-left: 10rem;
+   padding-right: 10rem;
+ }
+ .sub-personalize{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+ .loging, .code, .upcoming, .Register{
+   padding: 2rem;
+   margin-top: 3rem;
+   margin-left: 3rem;
+   border: .2rem solid;
+   border-radius: 1rem;
+   background-color: white;
+   border-color: wheat;
+   width: 50%;
+ }
+
+ .img-p1,.img-p2, .img-p3, .img-p4{
+   border-radius: 50%;
+   width: 20%;
+   align-items: center;
+   margin-left: 40%;
+ }
+
+ button, a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+ }
+ button {
+    background-color: #006622;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #029433;
+  }
